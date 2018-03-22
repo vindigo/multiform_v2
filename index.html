@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiform</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="module/multiform.css">
+</head>
+<body>
+
+  <form id="regForm" action="">
+
+  <h1>Register:</h1>
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">Name:
+    <p><input placeholder="First name" data-type="text"></p>
+    <p><input placeholder="Last name" data-type="text"></p>
+  </div>
+
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail" data-type="email"></p>
+    <p><input placeholder="Phone" data-type="number"></p>
+  </div>
+
+  <div class="tab">Birthday:
+    <p><input placeholder="dd" data-type="number"></p>
+    <p><input placeholder="mm" data-type="number"></p>
+    <p><input placeholder="yyyy" data-type="number"></p>
+  </div>
+
+  <div class="tab">Login Info:
+    <p><input placeholder="Username" data-type="text"></p>
+    <p><input placeholder="Password" data-type="text"></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button id="prevBtn" type="button" class="btn btn-primary">Previous</button>
+      <button id="nextBtn" type="button" class="btn btn-primary">Next</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+  </form>
+  <script src="module/multiform.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
